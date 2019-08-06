@@ -1,6 +1,8 @@
 ---
 process_exporter_version: 0.5.0
-process_exporter_web_listen_address: "0.0.0.0:9256"
+process_exporter_web_listen_ip: "127.0.0.1"
+process_exporter_web_listen_port: "9102"
+process_exporter_web_listen_address: "{{process_exporter_web_listen_ip}}:{{process_exporter_web_listen_port}}"
 
 process_exporter_config_file_template: process-exporter.yml.j2
 process_exporter_config_file: process-exporter.yml
